@@ -1,10 +1,10 @@
-package connect4_alg;
+package connect4_cvc;
 
-public class Main {
+public class Main_cvc {
     public static void main(String[] args) {
-        ConnectFourPlayer redPlayer = new Team9(); // Team9 AI is always red cuz i want it too be lol
-        ConnectFourPlayer blackPlayer = new TeamOpponent(); 
-        ConnectFour game = new ConnectFour(redPlayer, blackPlayer);
+        ConnectFourPlayer_cvc redPlayer = new Team9_cvc(); // Team9 AI is always red cuz i want it too be lol
+        ConnectFourPlayer_cvc blackPlayer = new TeamOpponent_cvc(); 
+        ConnectFour_cvc game = new ConnectFour_cvc(redPlayer, blackPlayer);
 
         char winner = '-';
         int moves = 0;

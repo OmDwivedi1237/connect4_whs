@@ -1,16 +1,16 @@
-package connect4_alg;
+package connect4_cvc;
 
 import java.util.Random;
 
-public class ConnectFour {
+public class ConnectFour_cvc {
     private static final int ROWS = 6;
     private static final int COLS = 7;
     private char[][] board;
-    private ConnectFourPlayer redPlayer;
-    private ConnectFourPlayer blackPlayer;
+    private ConnectFourPlayer_cvc redPlayer;
+    private ConnectFourPlayer_cvc blackPlayer;
     private Random random;
 
-    public ConnectFour(ConnectFourPlayer redPlayer, ConnectFourPlayer blackPlayer) {
+    public ConnectFour_cvc(ConnectFourPlayer_cvc redPlayer, ConnectFourPlayer_cvc blackPlayer) {
         this.redPlayer = redPlayer;
         this.blackPlayer = blackPlayer;
         board = new char[ROWS][COLS];
@@ -43,7 +43,7 @@ public class ConnectFour {
     }
 
     // Method to make a move for a player
-    public void makeMove(ConnectFourPlayer player, char symbol) {
+    public void makeMove(ConnectFourPlayer_cvc player, char symbol) {
         int col = player.playerMove(board);
         for (int i = ROWS - 1; i >= 0; i--) {
             if (board[i][col] == '-') {
@@ -116,7 +116,7 @@ public class ConnectFour {
 
     // Method to simulate a match between two players
     public char simulateMatch() {
-        ConnectFourPlayer currentPlayer = random.nextBoolean() ? redPlayer : blackPlayer;
+        ConnectFourPlayer_cvc currentPlayer = random.nextBoolean() ? redPlayer : blackPlayer;
         char currentSymbol = random.nextBoolean() ? 'R' : 'B';
 
         while (true) {

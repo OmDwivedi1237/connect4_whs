@@ -1,4 +1,4 @@
-package connect4_alg;
+package connect4_cvg;
 
 import java.util.Random;
 

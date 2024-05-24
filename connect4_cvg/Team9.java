@@ -1,4 +1,4 @@
-package connect4_alg;
+package connect4_cvg;
 
 class Team9 implements ConnectFourPlayer {
     private char piece;
