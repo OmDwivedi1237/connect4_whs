@@ -23,7 +23,7 @@ class Team9 implements ConnectFourPlayer {
     public char getPiece() {
         return this.piece;
     }
-    
+
     private class Move {
         int score;
         int col;
@@ -123,7 +123,7 @@ class Team9 implements ConnectFourPlayer {
     }
 
     private char checkWinner(char[][] board) {
-        // Horizontal, vertical, and diagonal checks for a winner
+        // horizontal, vertical, and diagonal checks for a winner
         for (int i = 0; i < 6; i++) {
             for (int j = 0; j < 7; j++) {
                 if (board[i][j] != '-' &&
