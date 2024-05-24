@@ -2,7 +2,7 @@ package connect4_alg;
 
 public class Main {
     public static void main(String[] args) {
-        ConnectFourPlayer redPlayer = new Team9();
+        ConnectFourPlayer redPlayer = new Team9(); // Team9 AI is always red cuz i want it too be lol
         ConnectFourPlayer blackPlayer = new TeamOpponent(); 
         ConnectFour game = new ConnectFour(redPlayer, blackPlayer);
 
@@ -11,7 +11,7 @@ public class Main {
         while (winner == '-' && !game.isBoardFull()) {
             game.displayBoard();
             if (moves % 2 == 0) {
-                System.out.println("Red player's turn");
+                System.out.println("Red player's turn (AI)");
                 game.makeMove(redPlayer, 'R');
             } else {
                 System.out.println("Black player's turn");
@@ -30,5 +30,3 @@ public class Main {
         }
     }
 }
-
-
